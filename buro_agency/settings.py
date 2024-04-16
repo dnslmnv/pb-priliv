@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-ipalgm)+5gct&2jtz6j0eohw6r!g2n2pcv$q+@9c22sa8yma)(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['pb-priliv.ru']
+ALLOWED_HOSTS = ['pb-priliv.ru', 'www.pb-priliv.ru']
 
 
 # Application definition
