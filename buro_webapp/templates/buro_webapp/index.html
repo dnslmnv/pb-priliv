@@ -1,0 +1,406 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Проектное бюро Прилив - ваш надежный партнер в области архитектурного проектирования и строительного консалтинга. Мы предлагаем комплексные решения для частных и коммерческих проектов, обеспечивая высокое качество и точность выполнения работ.">
+    <meta name="keywords" content="проектное бюро Сахалин, архитектурное проектирование Сахалин, строительный консалтинг, проектирование зданий Сахалин, архитектурные проекты, строительство, инженерные системы">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="NES@Agency">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'buro_webapp/images/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'buro_webapp/images/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'buro_webapp/images/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'buro_webapp/images/site.webmanifest' %}">
+    <link rel="mask-icon" href="{% static 'buro_webapp/images/safari-pinned-tab.svg' %}" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'buro_webapp/css/index.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Проектное Бюро Прилив</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg " id="navbar">
+            <div class="container d-flex align-items-center header-container">
+                <div class="nav-logo">
+                    <img src="../static/buro_webapp/images/logo.png" alt="nav_logo">
+                </div>  
+                <div class="number text-center">   
+                    <a class="montserrat-font blue-color contacts fs-5" href="tel:"><p>+7(984)139-16-15</p></a>
+                </div>
+                <button class="navbar-toggler shadow-none border-0 text-danger" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-danger"></span>
+                </button>
+                <div class="sidebar offcanvas offcanvas-end offcanvas-test" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel" style="background-color: #00000000;">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title text-white montserrat-font" id="offcanvasNavbarLabel">Навигация</h5>
+                    <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"
+                    aria-label="Close" id="close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end align-items-center flex-grow-1 pe-3">
+                    <li class="nav-item mx-2"> 
+                        <a class="nav-link active nav-link montserrat-font" aria-current="page" href="/">Главная</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active nav-link montserrat-font" aria-current="page" href="#services" id="navlink1">Услуги</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active nav-link montserrat-font" aria-current="page" href="#projects" id="navlink2">Портфолио</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active nav-link montserrat-font" aria-current="page" href="#form" id="navlink3">Оставить заявку</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active nav-link montserrat-font" aria-current="page" href="#contacts" id="navlink4">Контакты</a>
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container mt-5 d-flex justify-content-center justify-content-md-end">
+            <div class="row mt-5">   
+                <div class="col-12">
+                    <p class="text-center montserrat-font mt-5 fs-5 fw-light blue-grey">ПРОЕКТНОЕ БЮРО</p>
+                </div>
+            </div>
+        </div>
+        <div class="container d-flex justify-content-center justify-content-md-end">
+            <div class="row">   
+                <div class="col-12">        
+                    <p class="text-center montserrat-font blue-color spacing display-1 fw-normal">Прилив</p>
+                </div>
+            </div>
+        </div>
+        <div class="container d-flex justify-content-md-end justify-content-center">
+            <div class="row">
+                <div class="col-12 mt-3">
+                    <a href="#form"><button class="btn btn-primary mt-2" type="button"><p class="fs-3 fw-light">Оставить заявку</p></button></a>
+                </div>
+            </div>
+        </div>  
+    </header>
+    <main class="">
+        <section class="section mt-5" id="services">
+            <div class="container text-center">
+                <div class="row center-xs">
+                    <div class="col xs-12">
+                        <div class="services_subheader montserrat-font fs-5 fw-light blue-color">НАШ СЕРВИС</div>
+                        <div class="services_header mt-3">
+                            <span class="montserrat-font fs-1 mt-0 fw-normal blue-color">ВСЕ ВИДЫ</span>
+                            <br>
+                            <strong class="montserrat-font fs-1 fw-bolder blue-color">УСЛУГ</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container text-center mt-5">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-4 d-flex align-items-top justify-content-center">
+                        <div class="services_item mb-5">
+                            <img class="item_img" src="../static/buro_webapp/images/pipes.svg" alt=".">
+                            <p class="item_text montserrat-font mt-5  mx-6 fs-4 fw-light blue-color">Проектирование инженерных систем и сетей</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 d-flex align-items-top justify-content-center">
+                        <div class="services_item mb-5">
+                            <img class="item_img" src="../static/buro_webapp/images/crane.svg" alt=".">
+                            <p class="item_text montserrat-font mt-5 mx-6 fs-4 fw-light blue-color">Конструктивные решения</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 d-flex align-items-top justify-content-center">
+                        <div class="services_item mb-5">
+                            <img class="item_img" src="../static/buro_webapp/images/warehouse.svg" alt=".">
+                            <p class="item_text montserrat-font mt-5  mx-6 fs-4 fw-light blue-color">Перепланировка нежилых помещений</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 d-flex align-items-top justify-content-center">
+                        <div class="services_item mb-5">
+                            <img class="item_img" src="../static/buro_webapp/images/papers.svg" alt=".">
+                            <p class="item_text montserrat-font mt-5  mx-6 fs-4 fw-light blue-color">Разработка проекта и проектной документации</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 d-flex align-items-top justify-content-center">
+                        <div class="services_item mb-5">
+                            <img class="item_img" src="../static/buro_webapp/images/general_plan.svg" alt=".">
+                            <p class="item_text montserrat-font mt-5  mx-6 fs-4 fw-light blue-color">Проектирование и разработка генерального плана</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 d-flex align-items-top justify-content-center">
+                        <div class="services_item mb-5">
+                            <img class="item_img" src="../static/buro_webapp/images/eskiz.svg" alt=".">
+                            <p class="item_text montserrat-font mt-5  mx-6 fs-4 fw-light blue-color">Эскизный проект здания</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section mt-5" id="projects">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 ">
+                        <p class="projects_header montserrat-font fs-1 fw-bold blue-color">Наши проекты</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container mb-5 mt-5" id="portfolio">
+                <div class="row">
+                    <div class="col">
+                        <div id="carouselExampleCaptions" class="carousel slide">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="../static/buro_webapp/images/carousel1.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block text-center">
+                                  <p class="carousel-text">Проект загородного жилого дома</p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img src="../static/buro_webapp/images/carousel2.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block text-center">
+                                  <p class="">Дизайн проект базы отдыха</p>                        
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img src="../static/buro_webapp/images/carousel3.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block text-center">
+                                  <p>Проект Жилого Комплекса</p>                             
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img src="../static/buro_webapp/images/carousel4.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block text-center">
+                                  <p>Архитектурный проект магазина</p>                    
+                                </div>
+                              </div>
+            
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="form-bckg">
+            <div class="container form mt-5" id="form">
+                <div class="row d-flex align-items-center px-3">
+                    <div class="col-12 col-lg-6 text-center pt-5">
+                        <div class="row">
+                            <p class="montserrat-font display-4 fw-bold blue-color">Оставьте заявку</p>
+                        </div> 
+                        <div class="row pt-3">
+                            <p class="montserrat-font px-5">
+                                Введите ваши контакты и мы ответим вам в течении дня для обсуждения проекта
+                            </p>
+                        </div>
+                        <div class="row house-img">
+                            <img src="../static/buro_webapp/images/house.png" alt="priliv">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 text-center">   
+                        <form action="" method="post" id="form">
+                            {% csrf_token %}
+                            <div class="row input-control">
+                                <input id="name" aria-label="name" type="text" name="name" class="t-input mt-3" data-tilda-rule="name" placeholder="Ваше имя" data-tilda-req="2">
+                                <div class="error text-start fs-6 fw-light"></div>
+                            </div>
+                            <div class="row input-control">
+                                <input id="email" aria-label="email" type="text" name="email" class="t-input mt-3" data-tilda-rule="email" placeholder="Ваш E-mail" data-tilda-req="1">
+                                <div class="error text-start fs-6 fw-light"></div>
+                            </div>
+                            <div class="row input-control">
+                                <input  id="telephone" aria-label="telephone" type="text" name="telephone" class="t-input mt-3" data-tilda-rule="name" placeholder="Телефон" data-tilda-req="2">
+                                <div class="error text-start fs-6 fw-light"></div>
+                            </div>
+                            <div class="row">
+                                <textarea aria-label="textarea" name="Textarea" class="t-input-desc mt-3" placeholder="Описание вашего проекта" data-tilda-req="1" data-rows="4" rows="4"></textarea>
+                            </div>
+                            <div class="row">
+                                <button class="btn btn-primary pe-md-5 ps-md-5 pt-md-2 pb-md-2 mt-3" type="submit"><p class="fw-light">Оставить заявку</p></button>
+                            </div>
+                            <div class="row">
+                                <p class="privacy mt-3 mb-lg-0 mb-4">
+                                    Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с <a href="{% url 'privacy' %}" target="_blank">политикой конфиденциальности</a>
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="" id="contacts">
+            <div class="container text-center contacts-container" >
+                <div class="row">
+                    <div class="col-xs-12 col-lg-4 text-center text-lg-start">
+                        <h1 class="montserrat-font fw-bold blue-color">Контакты</h1> 
+                        <a class="montserrat-font blue-color contacts fs-3 mt-5" href="tel:"><p>+7(984)139-16-15</p></a> 
+                        <!--<a class="montserrat-font blue-color contacts fs-3 mt-5" href="mailto:test@test.com"><p>test@test.com</p></a> -->
+                        <p class="montserrat-font fw-normal fs-4">Южно-Сахалинск, Улица Больничная 59</p>
+                    </div>
+                    <div class="col-xs-12 col-lg-8 mt-lg-0 mt-3">
+                        <div class="map" id="map"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row footer-row">
+                <div class="col-lg-4 col-12 text-lg-start text-center mb-lg-0 mb-3">
+                    <p class="fs-4 fw-bold">Прилив</p>
+                    <p>Проектное бюро</p>
+                </div>
+                <div class="col-12 col-lg-4 text-center mb-lg-0 mb-4">  
+                    <p>© 2024. Все права защищены</p>
+                    <p>Designed by <a href="https://nes-agency.ru/" style="color:aliceblue; text-decoration: underline !important;" target="_blank">nes-agency.ru</a></p>
+                </div>
+                <div class="col-12 col-lg-4 text-center text-lg-end">
+                    <a href="#form"><button class="btn btn-primary footer-button" type="button"><p>Оставить заявку</p></button></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+   
+
+    <script src="https://api-maps.yandex.ru/2.1?apikey=ваш API-ключ&load=package.full&lang=ru_RU">
+    </script>
+    <script type="text/javascript">
+      ymaps.ready(function () {
+        var myMap = new ymaps.Map("map", {
+          center: [46.92439648783688,142.73819098344217],
+          zoom: 16
+        });
+        myMap.geoObjects.add(new ymaps.Placemark([46.92439648783688,142.73819098344217], {
+            balloonContent: ' <strong>Проектное Бюро Прилив</strong>'
+        }, {
+            preset: 'islands#icon',
+            iconColor: '#0095b6'
+        }))
+        });
+    </script>
+    <script>
+        document.getElementById('navlink1').addEventListener('click', function() {
+            document.getElementById('close').click();
+        });
+
+        document.getElementById('navlink2').addEventListener('click', function() {
+            document.getElementById('close').click();
+        });
+        document.getElementById('navlink3').addEventListener('click', function() {
+            document.getElementById('close').click();
+        });
+        document.getElementById('navlink4').addEventListener('click', function() {
+            document.getElementById('close').click();
+        });
+    </script>
+    <script>
+        const form = document.getElementById('form');
+        const name = document.getElementById('name');
+        const email = document.getElementById('email');
+        const telephone = document.getElementById('telephone');
+        
+        const setError = (element, message) => {
+            const inputControl = element.parentElement;
+            const errorDisplay = inputControl.querySelector('.error');
+
+            errorDisplay.innerText = message;
+            inputControl.classList.add('error');
+            inputControl.classList.remove('success')
+        };
+
+        const setSuccess = element => {
+            const inputControl = element.parentElement;
+            const errorDisplay = inputControl.querySelector('.error');
+
+            errorDisplay.innerText = '';
+            inputControl.classList.add('success');
+            inputControl.classList.remove('error');
+        };
+
+        const isValidEmail = email => {
+            const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(String(email).toLowerCase());
+        }
+
+        const isValidTelephone = telephone => {
+            const re = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/;
+            return re.test(String(telephone).toLowerCase());
+        }
+
+        const validateInputs = () => {
+            const nameValue = name.value.trim();
+            const emailValue = email.value.trim();
+            const telephoneValue = telephone.value.trim();
+            
+            let flag = true;
+
+            if (nameValue == '' || nameValue == null) {
+                setError(name, 'Имя не может быть пустым');
+                flag = flag && false;
+            } else {
+                setSuccess(name)
+                flag = flag && true;
+            }
+
+            if (emailValue == '' || emailValue == null) {
+                setError(email, 'Email не может быть пустым');
+                flag = flag && false;
+            } else if (!isValidEmail(emailValue)) {
+                setError(email, 'Некорректный email адрес');
+                flag = flag && false;
+            } else {
+                setSuccess(email);
+                flag = flag && true;
+            }
+
+            if (telephoneValue == '' || telephoneValue == null) {
+                setError(telephone, 'Номер телефона не может быть пустым');
+                flag = flag && false;
+            } else if (!isValidTelephone(telephoneValue)) {
+                setError(telephone,' Некорректный номер телефона');
+                flag = flag && false;
+            } else {
+                setSuccess(telephone);
+                flag = flag && true;
+            }
+            return flag;
+
+            
+
+
+        };
+
+        form.addEventListener('submit', e => {
+            if (!validateInputs()){
+                e.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+</html>

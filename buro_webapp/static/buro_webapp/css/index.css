@@ -1,0 +1,218 @@
+@media (max-width: 991px) {
+    .sidebar {
+        background-color: rgba(0, 0, 0, 0.317) !important;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(20px);
+    }
+}
+
+body, html {
+    overflow-x: hidden !important;
+    scroll-behavior: smooth;
+}   
+
+.navbar-toggler-icon{
+    color: rgb(11, 7, 56) !important;
+}
+.spacing{
+    letter-spacing: 0.015em;    
+}
+.montserrat-font {
+    font-family: "Montserrat", sans-serif !important;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.offcanvas-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.offcanvas-title {
+    text-align: center;
+    flex-grow: 1;
+    margin: 0 auto;
+}
+
+.offcanvas-test {
+    width: 100% !important;
+}
+
+.header-container {
+    height: 100% !important;
+}
+
+.navbar {   
+    
+    /*background-color: rgba(5, 5, 5, 0.558) !important;
+    */
+    height: 100px !important;
+}
+
+.navbar-nav .nav-link.active {
+    color: rgb(11, 7, 56) !important;
+}
+
+@media (max-width: 991px) {
+    .navbar-nav .nav-link.active {
+        color: aliceblue !important;
+    }
+}
+.nav-logo {
+    width: 130px;
+    height: 100px;
+}
+
+.nav-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit:scale-down;
+}
+
+header {
+    background: url(../images/roton_back.png) rgba(0, 0, 0, 0.55);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.item_img {
+    height: 6rem;
+}
+
+p {
+    margin-bottom: 0 !important;
+    
+}
+
+.services_header {
+    line-height: 1.2;
+}
+
+@media (hover: hover) {
+    .button:hover {
+        background-color: var(--color2);
+    }
+}
+
+@media (hover: none) {
+    .button:active {
+        background-color: var(--color2);
+    }
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.btn {
+    background-color: rgb(11, 7, 56) !important;
+    border-radius: 0px !important;
+    border: none !important;
+    padding: 0.7rem 4rem !important;    
+
+}
+
+.form-bckg {
+    background-color: #e6e6e6 ;
+}
+
+.form {
+    background-color: #e6e6e6 ;
+}
+
+.blue-color {
+    color:rgb(11, 7, 56);
+}
+
+.house-img {
+    opacity: 0.3;
+}
+
+.map{   
+    height: 50vh;
+    background-color: #333;
+}
+
+.t-input {
+    color: rgb(7, 14, 61);
+    border: 1px solid rgb(7, 14, 61);
+    background-color: rgb(240, 237, 237);
+    font-size: 18px;
+    font-weight: 300;
+    height: 60px;
+}
+
+.t-input-desc {
+    color: rgb(7, 14, 61);
+    border: 1px solid rgb(7, 14, 61);
+    background-color: rgb(240, 237, 237);
+    font-size: 18px;
+    font-weight: 300;
+    height: 110px;
+}
+
+p {
+    margin-top: 0 !important;
+}
+
+.privacy {
+    font-size: small;
+    opacity: 0.6;
+}
+
+.contacts{
+    text-decoration: underline !important;
+}
+
+.contacts-container{
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(7, 14, 61);
+    color: seashell;
+}
+
+.footer-row {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+
+.footer-button {
+    border: #f0eded 2px solid !important;
+    border-radius: 0% !important;
+}
+
+#portfolio p{
+    display: inline-block;
+    background-color: #000000ac;
+    padding: 0.5rem 0.5rem;
+    
+    
+}
